@@ -9,7 +9,6 @@ Usage: $(basename $0) [OPTION] [SEARCH QUERY]
 Example:
 
 Notes:
-  - The default behaviour is to
 
 ENDOFUSAGE
   exit
@@ -32,7 +31,7 @@ function lookupWikiPage {
                         sed -e 's@\(['\]''\]']\)@@g')
     echo "${resp_remove_links}"
 
-    #TODO: remove images properly first in above
+    #TODO: remove images properly first in above parsing
     #      remove hrefs
 }
 function lookupIntro {
